@@ -138,3 +138,48 @@ print(cities.sorted())
 let presidents = ["Bush", "Obama", "Trump", "Biden"]
 let reversedPresidents = presidents.reversed()
 print(reversedPresidents)
+
+
+let employee2 = ["name": "Taylor Swift", "job": "Singer", "location": "Nashville"]
+
+print(employee2["name"])
+print(employee2["job"])
+print(employee2["location"])
+
+// read about optionals in swift
+
+print(employee2["name", default: "Unknown"])
+print(employee2["job", default: "Unknown"])
+print(employee2["location", default: "Unknown"])
+
+
+var people = Set<String>()
+people.insert("Denzel Washington")
+people.insert("Tom Cruise")
+people.insert("Nicolas Cage")
+people.insert("Samuel L Jackson")
+
+
+enum Weekday {
+    case monday
+    case tuesday
+    case wednesday
+    case thursday
+    case friday
+}
+
+// enum is kind of a variable with a finite set of values
+
+var day = Weekday.monday
+day = Weekday.tuesday
+day = Weekday.friday
+
+// the above is one way of writing it. but swift is highly optimized
+
+var day1 = Weekday.monday
+day1 = .tuesday
+day1 = .friday
+
+// in the above swift knows day1 must be referring to enum Weekday
+
+
