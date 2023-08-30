@@ -181,5 +181,3 @@ day1 = .tuesday
 day1 = .friday
 
 // in the above swift knows day1 must be referring to enum Weekday
-
-
